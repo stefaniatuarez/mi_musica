@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎵 Reproductor de Música</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎵 Mi Reproductor de Música</h1>
+    
+    <div class="track">
+      <h2>🎧 Morat - Cuando nadie ve</h2>
+      <img src="https://i.ibb.co/TBH6yY55/morat-1.jpg" alt="Portada de Morat - Cuando nadie ve">
+      <audio id="audio1" preload="metadata"></audio>
+      <div class="controls">
+        <button onclick="toggleAudio('audio1', 'https://www.dropbox.com/scl/fi/neirmspnsziyd1xxainre/Morat-Cuando-Nadie-Ve-mp3cut.net.mp3?rlkey=l1l0gexhak26omxqbq8qba2fv&st=orr3kw66&dl=1')" class="play-button" id="btn-audio1">
+          <span class="play-icon">▶</span> Reproducir
+        </button>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-audio1"></div>
+        </div>
+        <div class="time-display" id="time-audio1">0:00 / 0:00</div>
+        <div class="volume-container">
+          <span>🔊</span>
+          <input type="range" min="0" max="1" step="0.1" value="0.7" class="volume-slider" id="volume-audio1">
+        </div>
+      </div>
+      <div class="error" id="error-audio1"></div>
+    </div>
+
+    <div class="track">
+      <h2>🎧 Morat - Como te atreves</h2>
+      <img src="https://i.ibb.co/39GCtkpw/morat2.webp" alt="Portada de Morat - Como te atreves">
+      <audio id="audio2" preload="metadata"></audio>
+      <div class="controls">
+        <button onclick="toggleAudio('audio2', 'https://www.dropbox.com/scl/fi/solnhm0bnlyt855uwq18o/Morat-C-mo-Te-Atreves-Video-Oficial-mp3cut.net.mp3?rlkey=7hp04pafy6q4m7xnutf5tsrn0&st=xqw1021j&dl=1')" class="play-button" id="btn-audio2">
+          <span class="play-icon">▶</span> Reproducir
+        </button>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-audio2"></div>
+        </div>
+        <div class="time-display" id="time-audio2">0:00 / 0:00</div>
+        <div class="volume-container">
+          <span>🔊</span>
+          <input type="range" min="0" max="1" step="0.1" value="0.7" class="volume-slider" id="volume-audio2">
+        </div>
+      </div>
+      <div class="error" id="error-audio2"></div>
+    </div>
+    
+    <div class="track">
+      <h2>🎧 Morat - No hay nada más que hablar</h2>
+      <img src="https://i.ibb.co/yBm3vhdj/Morat.jpg" alt="Portada de Morat - No hay nada más que hablar">
+      <audio id="audio3" preload="metadata"></audio>
+      <div class="controls">
+        <button onclick="toggleAudio('audio3', 'https://www.dropbox.com/scl/fi/907zko8397zdgmgl1tqnl/Morat-No-Hay-M-s-Que-Hablar-mp3cut.net.mp3?rlkey=jotp313mjnr9lxkz69fm6j2ga&st=oc7bij96&dl=1')" class="play-button" id="btn-audio3">
+          <span class="play-icon">▶</span> Reproducir
+        </button>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-audio3"></div>
+        </div>
+        <div class="time-display" id="time-audio3">0:00 / 0:00</div>
+        <div class="volume-container">
+          <span>🔊</span>
+          <input type="range" min="0" max="1" step="0.1" value="0.7" class="volume-slider" id="volume-audio3">
+        </div>
+      </div>
+      <div class="error" id="error-audio3"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
